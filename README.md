@@ -1,6 +1,6 @@
 # Chemical Equilibrium of Glycerol Conformers
 
-This repository contains Fortran90 codes to calculate the partition function and equilibrium constant between two conformers of glycerol (A and B as shown in image "immagine_conformeri.JPG")), using "ab initio" data  including vibrational frequencies and zero-point energy in the gas phase.
+This repository contains Fortran90 codes to calculate the partition function and equilibrium constant between two conformers of glycerol (A and B as shown in image "immagine_conformeri.JPG")), using "ab initio" data, including vibrational frequencies and zero-point energy in the gas phase.
 The data are extracted from the paper:
 
 ------ J. Phys. Chem. A 2000, 104, 47, 11220–11222, Riccardo Chelli et al., [DOI: 10.1021/jp002677e](https://doi.org/10.1021/jp002677e) ------
@@ -21,11 +21,11 @@ The calculation is also focused on the temperature dependence of the equilibrium
     
 ====== Additional Scripts =======
 
-  - A basic MATLAB script is provided to fit the equilibrium constant vs. temperature data and visualize the results(As shown in Image kp_T)
+  - A basic MATLAB script is provided to fit the equilibrium constant vs. temperature data and visualize the results(As shown in Image "grafico_kp_T")
 
  ==== Results ====            
  
-The Code provide that conformer B is more stable than A, at 298.15 K and generally all over the range.
+The Code confirm that conformer B is more stable than A, at 298.15 K and generally all over the range.
 The analysis reveals an exponential decrease in the equilibrium constant with increasing temperature. This behavior is visualized using the provided MATLAB script.
 
 === How to Compile ====
