@@ -1,5 +1,5 @@
 # Chemical_equilibrium
-In this Fortran90 code i calculated the partition function for two conformers of glicerol, starting from "ab initio" data, such as vibrational frequencies and zero-point-energy.
+In this Fortran90 code i calculated the partition function for two conformers of glycerol, starting from "ab initio" data, such as vibrational frequencies and zero-point-energy.
 This data are extracted from : J. Phys. Chem. A 2000, 104, 47, 11220–11222, Riccardo Chelli et al. , https://doi.org/10.1021/jp002677e
 I also tried to visualize the effect of temperature on the equilibrium. An exponential decrease of the equilibrium costant was expected, but in this way i managed to demonstrate this. 
 
