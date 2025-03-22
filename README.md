@@ -12,7 +12,7 @@ The calculation is also focused on the temperature dependence of the equilibrium
        --M-A-I-N--        
       
   - `funz_partizione.f90`: Main program for calculating the partition function at T = 298.15 K.
-  - `funz_partizione_temperature.f90`: Main program for partition function over a range of temperatures (40 K to 420 K).
+  - `funz_partizione_temperature.f90`: Main program for partition function over a range of temperatures (20 K to 800 K).
  
     --M-O-D-U-L-E-S--
                                         
@@ -21,12 +21,13 @@ The calculation is also focused on the temperature dependence of the equilibrium
     
 ====== Additional Scripts =======
 
-  - A basic MATLAB script is provided to fit the equilibrium constant vs. temperature data and visualize the results(As shown in Image "grafico_kp_T")
+A basic MATLAB script is provided to fit the logarithm of the equilibrium constant (ln K) as a function of the inverse temperature (1/T) and to visualize the behavior of Gibbs free energy over the temperature range (as shown in the images). By fitting the data, the enthalpy (ΔH) and entropy (ΔS) of the reaction have been determined.
+
+polyfit(invT, lnKp, 1) makes a linear polinomial fit over data (invT, lnKp) and create an array with the the slope and y-intercept of the fitted line. In our case these coefficient are related to the Enthalpy and Entropy of the reaction.
 
  ==== Results ====            
  
-The Code confirm that conformer B is more stable than A, at 298.15 K and generally all over the range.
-The analysis reveals an exponential decrease in the equilibrium constant with increasing temperature. This behavior, which is expected, has been demonstrated numerically and can be visualized using the provided MATLAB script.
+The Code confirm that conformer B is more stable than A, at 298.15 K and generally all over the range. Matlab Script determined the values of the enthalpy and entropy of the reaction.
 
 === How to Compile ====
 1. --- Compile Modules ---
