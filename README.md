@@ -33,6 +33,9 @@ The Code confirm that conformer B is more stable than A, at 298.15 K and general
 1. --- Compile Modules ---
    gfortran -c Vibrazionale.f90 mom_inerzia.f90
 2. --- Compile Main ---
+   
    gfortran -o main funz_partizione.f90 Vibrazionale.o mom_inerzia.o
+   
    /main.exe
+   
 The same for the code over the temperature
